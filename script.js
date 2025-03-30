@@ -22,12 +22,12 @@ function gridSize(size) {
         let row = document.createElement("div");
         row.classList.add('row');
         for (j = 0; j < (size); j++) {
-            let width = 800 / size;
+            let width = 45 / size;
             let box = document.createElement("div")
-            box.style.minWidth = width + 'px';
-            box.style.minHeight = width + 'px';
-            box.style.maxWidth = width + 'px';
-            box.style.maxHeight = width + 'px';
+            box.style.minWidth = width + 'vw';
+            box.style.minHeight = width + 'vw';
+            box.style.maxWidth = width + 'vw';
+            box.style.maxHeight = width + 'vw';
             row.appendChild(box);
 
             box.addEventListener("mouseover", function() {
